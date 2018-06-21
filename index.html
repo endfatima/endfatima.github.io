@@ -15,7 +15,8 @@
         <link rel="stylesheet" type="text/css" href="bootstrap.min.css">
         <link rel="stylesheet" type="text/css" href="login.css">
 
-        <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+        <script type="text/javascript" src="jquery.js"></script>
+        <script type="text/javascript" src="jquery.countdown.min.js"></script>
 
         <!--PARA ACEITAR ACENTOS-->
         <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
@@ -42,11 +43,54 @@
             <img src="https://res.cloudinary.com/dcmhobhdj/image/upload/v1529428556/endfat1.png">
         </div>
 
-        <div class="counterDiv">
-            <iframe scrolling="no" src="//www.tickcounter.com/widget/countdown/540829" style="border: none; margin: 0px; padding: 0px; overflow: hidden; width: 100%; height: 100%; pointer-events: auto !important;"></iframe>
+        <div class="container">
+            
+            <div class="row col-sm-10 col-md-12 col-lg-12 col-xg-12">
+                
+                <div class="counterDiv">
+
+                    <table class="table tabela_dias">
+                        <tr>
+                            <td><div id="dias"></div></td>
+                            <td><div id="horas"></div></td>
+                            <td><div id="minutos"></div></td>
+                            <td><div id="segundos"></div></td>
+                        </tr>
+                        <tr>
+                            <td><div id="label_dias">dias</div></td>
+                            <td><div id="label_horas">horas</div></td>
+                            <td><div id="label_minutos">minutos</div></td>
+                            <td><div id="label_segundos">segundos</div></td>
+                        </tr>
+                    </table>
+                </div>
+
+            </div>
+
+            <div class="row col-sm-10 col-md-12 col-lg-12 col-xg-12">
+                <div id="frase"></div>
+            </div>
+
         </div>
+
+        <script type="text/javascript">
+
+        var data = "2018/07/16 10:00:00";
+
+        contar("#dias", data, '%D');
+        contar("#horas", data, '%H');
+        contar("#minutos", data, '%M');
+        contar("#segundos", data, '%S');
+
+        function contar (elemento, data, valor) {
+            $(elemento).countdown(data, function(event) {$(this).text(event.strftime(valor))});
+        }
+        </script>
+
+
         
         <script type="text/javascript" src="bootstrap.min.js"></script>
+        <script type="text/javascript" src="Frases.js"></script>
 
     </body>
 </html>

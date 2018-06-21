@@ -7,6 +7,33 @@
 }
 
 .counterDiv {
+	margin: 20px 0px 0px 0px;
 	background: #eee;
     padding: 30px;
+    border: 1px solid #eee;
+	border-radius: 15px;
+}
+
+#dias {
+	/*width: 30px;*/
+}
+
+.tabela_dias {
+	text-align: center;
+	font-size: 150%;
+}
+
+.table>tbody>tr>td, .table>tbody>tr>th, .table>tfoot>tr>td, .table>tfoot>tr>th, .table>thead>tr>td, .table>thead>tr>th {
+	border: none;
+}
+
+#frase {
+	margin: 20px 0px 0px 0px;
+	padding: 20px;
+	background: #2e6c88de;
+	border: 1px solid #2e6c88de;
+	border-radius: 15px;
+	color: #fff;
+	font-family: Candara,Calibri,Segoe,Segoe UI,Optima,Arial,sans-serif;
+	font-size: 20px;
 }
