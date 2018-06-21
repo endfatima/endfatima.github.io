@@ -30,14 +30,15 @@
 #frase , #faltam {
 	margin: 20px 0px 0px 0px;
 	padding: 20px;
-	background: #2e6c88de;
-	border: 1px solid #2e6c88de;
+	background: #fafa00;
+	border: 1px solid #fafa00;
 	border-radius: 15px;
-	color: #fff;
+	color: #16820a;
 	font-family: Candara,Calibri,Segoe,Segoe UI,Optima,Arial,sans-serif;
 	font-size: 20px;
 }
 
 #faltam {
+	background: #fafa00;
 	text-align: center;
 }
