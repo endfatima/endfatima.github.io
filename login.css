@@ -27,7 +27,7 @@
 	border: none;
 }
 
-#frase {
+#frase , #faltam {
 	margin: 20px 0px 0px 0px;
 	padding: 20px;
 	background: #2e6c88de;
@@ -36,4 +36,8 @@
 	color: #fff;
 	font-family: Candara,Calibri,Segoe,Segoe UI,Optima,Arial,sans-serif;
 	font-size: 20px;
+}
+
+#faltam {
+	text-align: center;
 }
